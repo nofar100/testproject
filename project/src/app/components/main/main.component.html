@@ -1,0 +1,39 @@
+<div class="title">
+  <h3>Expenses Application</h3>
+</div>
+<div class="all">
+<div class="container">
+  <div class="main">
+    <div class="picture">
+      <img src='../assets/images/8025287921598811056-512.png' alt="No Picture">
+    </div>
+    <div class="name-container">
+    Your Name: {{currentName}}
+    </div>
+    <div class="expenses-container">
+    Your Total Expenses: {{totalExpenses}}
+    </div>
+    <div class="balance-container">
+    Your Balance: {{currentBalance}}
+    </div>
+    <div class="day-container">
+      Your Day Of Tracking: {{currentDayOfTracking}}
+     </div>
+    <div class="details-button-container">
+    <button (click)="detailsclick()">Details <i class='bx bxs-detail'></i></button>
+     </div>
+    </div>
+    <div class="setting">
+      <div class="settings-container">
+        <app-settings (editedUser)="updateuser($event)"></app-settings>
+      </div>
+    </div>
+  </div>
+      <div class="add-button-container">
+        <button (click)="toAdd()">Add Expenses <i class='bx bx-cart'></i></button>
+      </div>
+      <div class="expenses-container" *ngIf="displayList">
+       <app-expenses-list></app-expenses-list>
+      </div>
+    </div>
+  

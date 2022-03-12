@@ -1,0 +1,83 @@
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-family: 'Poppins';
+}
+.popup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    position: fixed;
+}
+.button-return button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: 'Segoe UI';
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.button-return :hover{
+    background-color: red;
+
+}
+
+.expense-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Segoe UI';
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 300px;
+    background: linear-gradient(#757F9A,#D7DDE8);
+}
+
+.input-container input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    height: 10px;
+    font-family: 'Segoe UI';
+    transition: 0.5s;
+    background-color: transparent;
+    color: black;
+}
+.input-container input:focus{
+    transform: translateY(-10px);
+}
+.button-container button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: 'Segoe UI';
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.message{
+    font-family: 'Segoe UI';
+}
+.popup-container{
+    
+    background-color: rgba(255, 255, 255, 0.8);
+}
+

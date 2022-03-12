@@ -1,0 +1,31 @@
+<div class="all">
+<div class="button-return" >
+    <button (click)="return()"><i class='bx bx-arrow-back bx-xs' ></i></button>
+</div>
+<div class="page-container">
+<div class="expense-container">
+    <h3>New Expense <i class='bx bx-money-withdraw'></i></h3>
+    <div class="container">
+        <div class="input-container">
+            <div class="storename">
+                <input type="text" placeholder="Store Name" [(ngModel)]="storeName" (keyup)="resetMessage()">
+            </div>
+            <div class="number">
+                <input type="number" placeholder="Expense Amount" [(ngModel)]="amount" (keyup)="resetMessage()">
+            </div>  
+        </div>
+    </div>
+        <div class="button-container">
+            <button (click)="addExpense()">Add</button>
+            <button (click)="cancelPopup()">Cancel</button>
+        </div>
+    </div>
+       <div class="message">
+           {{message}}
+       </div>
+
+<div class="popup-container" *ngIf="cancelPopUp">
+    <app-cancel-popup (answerEvent)="PerformedAnswer($event)"></app-cancel-popup>
+</div>
+</div>
+</div>

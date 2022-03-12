@@ -1,0 +1,25 @@
+
+.input input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    height: 10px;
+    font-family: 'Segoe UI';
+    transition: 0.5s;
+}
+.input input:focus{
+    transform: translateY(-10px);
+}
+h3{
+    font-family: 'Poppins';
+}
+.button button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+}

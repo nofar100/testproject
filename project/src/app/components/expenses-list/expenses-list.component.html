@@ -1,0 +1,16 @@
+<div class="list-container">
+    <table style="width: 100%">
+        <tr>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Day Of Tracking</th>
+        </tr>
+        <tr *ngFor="let expense of list">
+          <td>{{ expense.storeName }}</td>
+          <td>{{ expense.amount }}</td>
+          <td>{{ expense.dayoftracking }}</td>
+        </tr>
+      </table>
+</div>
+
+
